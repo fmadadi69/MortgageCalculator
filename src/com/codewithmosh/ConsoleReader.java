@@ -8,7 +8,7 @@ public class ConsoleReader {
 
     public double readNumber(String prompt,double min,double max){
 
-        double value = 0;
+        double value;
         while(true){
             System.out.print(prompt);
             value = scanner.nextDouble();

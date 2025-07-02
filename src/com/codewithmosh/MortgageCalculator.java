@@ -1,8 +1,5 @@
 package com.codewithmosh;
 
-import java.text.NumberFormat;
-import java.util.Enumeration;
-
 public class MortgageCalculator {
     final byte MONTHS_IN_YEAR =12;
     final byte PERCENT =100;
