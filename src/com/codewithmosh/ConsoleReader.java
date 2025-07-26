@@ -2,11 +2,20 @@ package com.codewithmosh;
 
 import java.util.Scanner;
 
+/*
+    Since there is only a single console, class members could be defined as static.
+*/
+
 public class ConsoleReader {
 
-    private final Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
-    public double readNumber(String prompt,double min,double max){
+    public static double readNumber(String prompt){
+        System.out.println(prompt);
+        return scanner.nextDouble();
+    }
+
+    public static double readNumber(String prompt,double min,double max){
 
         double value;
         while(true){
@@ -19,3 +28,4 @@ public class ConsoleReader {
         return value;
     }
 }
+
